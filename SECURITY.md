@@ -7,4 +7,6 @@ I take supply chain security very seriously and have implemented measures to pro
 * Enabled [Secret Protection](https://docs.github.com/en/code-security/how-tos/secure-at-scale/configure-organization-security/configure-specific-tools/protect-your-secrets) in all repositories
 * Disabled [`Allow GitHub Actions to create and approve pull requests`](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#preventing-github-actions-from-creating-or-approving-pull-requests) in all repositories
 * Set [default workflow permissions](https://docs.github.com/en/actions/tutorials/authenticate-with-github_token#modifying-the-permissions-for-the-github_token) to read-only in all repositories
+* Set up container image signing using [Cosign](https://github.com/sigstore/cosign) keyless signing via Sigstore
+* Set up [SLSA provenance](https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-from-builds) for binaries and container images via GitHub Artifact Attestations
 * Created a ruleset in all repositories requiring signed commits (from March 2026)
